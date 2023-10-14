@@ -7,13 +7,14 @@
 body{
     background-color:  rgb(7, 101, 70);
     color: #fff;
+    display: flex;
 }
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 10px;
     display: flex;
     background: transparent;
     justify-content: space-between;
@@ -41,28 +42,30 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 50px;
 }
 .home{
     position:relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 90px 10px 0;
+    margin-left: 200px;
     
 }
 .home-contact{
     max-width: 450px;
 
 }
+
 .home-contact h3{
     font-size: 28px;
     font-weight: 600;
 }
 .home-contact h3:nth-of-type(2){
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .home-contact h3 span{
     color: aqua;
@@ -78,25 +81,37 @@ body{
 }
 .btn{
     display: inline-block;
-    padding: 12px 28px;
-    background: aqua;
+    padding: 13px 28px;
+    background: rgb(115, 251, 251);
     border-radius: 40px;
     box-shadow: 0 0 10px aqua;
     text-decoration: none;
     letter-spacing: 3px;
     color: black;
+    margin-top: 30px;
+}
+
+.home-contact .logo-font{
+    font-size: 40px;
+    color: white;
+    
+    padding-top: 20px;
+    margin-top: 20px;
+
+
 }
 img{
     max-width: 400px;
-    margin-right: -20px;
+    margin-right: 100px;
     background: rgb(41, 38, 38);
     border-radius: 50%;
     border: 5px solid aqua;
     box-shadow: 0 0 10px aqua;
+
     
 }
 .ig{
-    margin-left: 100px;
+    margin:0px;
     
     
     
@@ -109,7 +124,7 @@ img{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: rgb(52, 129, 129);;
+    background: rgb(52, 129, 129);
     padding-top: 90px;
 
 } 
@@ -151,54 +166,56 @@ span{
     background:var(--second-bg-color);
 
 }
-.education{
+
+
+
+
+/* education form */
+
+    
+.container-2{
+    position: relative;
+    width: 1140px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    margin: 8px;
+    color: black;
+    margin-top: 70px;
+}
+.container-2 .card{
+    width: 300px;
+    position: relative;
+    height: 450px;
+    background: #dbd5d5;
+    margin: 30px 10px;
+    padding: 10px 15px 0 50px;
+    display: flex;
     flex-direction: column;
-    min-height: auto;
-    padding-top: 100px;
-    background: rgba(13, 53, 36, 0.119);
+    box-shadow: 0.5px 10px #3e3c3c;
+    transition: 0.3S ease-in-out;
+}
+.imgs{
+    width: 200px;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
     
 }
-.education .education-row{
-    display: flex;
-    gap: 5rem;
-    justify-content: space-between;
-}
-.education-row.education-colum{
-    flex: 1 1 40rem;
-
-}
-.education-colum .title{
-    font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
-}
-.education-colum .education-box{
-    border-bottom: .2rem solid var(--second-bg-color);
-}
-
-.education-box .education-content{
+.container .card .imgbx{
     position: relative;
+    width: 260px;
+    height: 260px;
+    /* top: -60px; */
+    left: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,1.2);
 }
-.education-content .content{
-    position: relative;
-    padding: 1rem;
-    border: aqua;
-    border-radius: .3rem;
-    margin-bottom: 1.5rem;
+.container .card .imgbx img{
+    max-width: 100%;
 }
-.education-content .content .year{
-    font-size: 1.5rem;
-    color: aqua;
-    padding-bottom: .5rem;
-}
-.education-content .content h3{
-    font-size: 1.5rem;
-}
-.education-content .content p{
-    font-size: 1rem;
-}
+/* skill form */
 .skills{
     width: 100%;
     height: 100vh;
@@ -244,6 +261,7 @@ span{
 .contact >h1{
     text-align: center;
     padding-top: 30px;
+    margin-left: 270px;
     font-size: 40px;
     color: aqua;
     
@@ -251,6 +269,7 @@ span{
 .contact >p{
     text-align: center;
     padding-top: 30px;
+    margin-left: 200px;
     font-size: 30px;
 }
 .contact-box{
@@ -259,6 +278,7 @@ span{
     margin: 0 auto;
     padding: 20px 20px;
     margin-top: 30px;
+    margin-left: 500px;
 
 }
 .contact-box >input{
